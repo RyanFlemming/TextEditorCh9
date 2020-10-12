@@ -35,6 +35,7 @@ namespace TextEditorCh9
         private void save_Click(object sender, EventArgs e)
         {
             saveFileDialog1.Title = "Save to file";
+            saveFileDialog1.Filter = "Text Files (*.txt) | *.txt";
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 name = saveFileDialog1.FileName;
